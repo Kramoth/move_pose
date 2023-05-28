@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="move_pose" name="circle" type="circle_pose.py"/>
+	<node pkg="move_pose" name="sub" type="sub_circle.py" output="screen">
+		<remap from="subscribed_topic" to="published_topic"/>
+	</node>
+</launch>
