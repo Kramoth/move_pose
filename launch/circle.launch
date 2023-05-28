@@ -3,4 +3,5 @@
 	<node pkg="move_pose" name="sub" type="sub_circle.py" output="screen">
 		<remap from="subscribed_topic" to="published_topic"/>
 	</node>
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find move_pose)/rviz/circle_visualization.rviz"/>
 </launch>
