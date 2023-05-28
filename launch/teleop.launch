@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="move_pose" name="teleop" type="teleop_pose.py"/>
+	<node pkg="teleop_twist_keyboard" name="teleop_joy" type="teleop_twist_keyboard.py" output="screen"/>
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find move_pose)/rviz/teleop_visualization.rviz"/>
+</launch>
