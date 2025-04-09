@@ -23,7 +23,6 @@ class MoveCircleNode(Node):
         self.theta+=self.speed
         msg.pose.position.x=self.radius*math.cos(self.theta)
         msg.pose.position.y=self.radius*math.sin(self.theta)
-        msg.pose.orientation.w=1.0
         
         self.pose_publisher.publish(msg)
 
