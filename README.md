@@ -35,7 +35,7 @@ In a second terminal, launch RViz with the configuration file:
 ```bash
 cd ~/ros2_ws
 source install/setup.bash
-rviz2 -d install/move_pose/share/move_pose/config/default.rviz
+rviz2 -d ~/ros2_ws/src/move_pose/config/default.rviz
 ```
 
 ---
